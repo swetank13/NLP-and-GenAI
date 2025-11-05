@@ -2,6 +2,13 @@
 
 We are going to build a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the real-estate domain. (But it's features can be extended to any domain.)
 ![product screenshot](resources/image.png)
+
+- Why do we need to build this tool instead we can use chatGPT and get result
+  - Reason:
+    1. Copy paste multiple article is a tedious task.
+    2. We need an aggregate knowledge base so we can schedule pipeline and store the info in db then we can query info.
+    3. Context window limit.
+
 ### Features
 
 - Load URLs to fetch article content.
