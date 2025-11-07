@@ -41,7 +41,7 @@ def initialize_components():
 
 def process_urls(urls):
     """
-    This function scraps data from a url and stores it in a vector db
+    This function scraps data from an url and stores it in a vector db
     :param urls: input urls
     :return:
     """
@@ -86,6 +86,6 @@ if __name__ == "__main__":
     ]
 
     process_urls(urls)
-    answer, sources = generate_answer("Tell me what was the 30 year fixed mortagate rate along with the date?")
+    answer, sources = generate_answer("Tell me what was the 30 year fixed mortgage rate along with the date?")
     print(f"Answer: {answer}")
     print(f"Sources: {sources}")

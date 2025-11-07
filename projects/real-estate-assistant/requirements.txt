@@ -1,9 +1,10 @@
-python-dotenv
-streamlit
+python-dotenv~=1.1.1
+streamlit~=1.35.0
 unstructured
 tiktoken
 langchain-chroma
 langchain-groq
-langchain-community
+langchain-community~=0.3.27
 protobuf
 langchain-huggingface
+langchain~=0.3.27

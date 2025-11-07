@@ -19,6 +19,14 @@ if process_url_button:
             placeholder.text(status)
 
 query = placeholder.text_input("Question")
+
+# # Submit button
+# if st.button("Submit"):
+#     if query:
+#         st.write(f"You submitted: {query}")
+#     else:
+#         st.write("Please enter a question before submitting.")
+
 if query:
     try:
         answer, sources = generate_answer(query)

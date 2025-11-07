@@ -16,6 +16,8 @@ We are going to build a user-friendly news research tool designed for effortless
 - Construct an embedding vector using HuggingFace embeddings and leverage ChromaDB as the vectorstore, to enable swift and effective retrieval of relevant information.
 - Interact with the LLM's (Llama3 via Groq) by inputting queries and receiving answers along with source URLs.
 
+### Techincal Architecture:
+![product screenshot](documents/Technical-Architecture-Diagram.png)
 
 ### Set-up
 
