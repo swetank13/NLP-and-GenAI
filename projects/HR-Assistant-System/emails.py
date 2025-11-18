@@ -75,4 +75,4 @@ if __name__ == "__main__":
     email_sender.send_email(
         subject="Test Email",
         body="This is a test email.",
-        to_emails="swet0506@gmail.com",)
+        to_emails="test@gmail.com",)
