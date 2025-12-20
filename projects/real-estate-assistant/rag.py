@@ -13,6 +13,7 @@ load_dotenv()
 # Constants
 CHUNK_SIZE = 1000
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+# In general, bge-base-en-v1.5 is used in production due to 768 dim., Top accuracy, versatile
 VECTORSTORE_DIR = Path(__file__).parent / "resources/vectorstore"
 COLLECTION_NAME = "real_estate"
 

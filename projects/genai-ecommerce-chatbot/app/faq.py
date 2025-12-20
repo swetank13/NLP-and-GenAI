@@ -9,7 +9,7 @@ from pathlib import Path
 
 load_dotenv()
 
-faqs_path = Path(__file__).parent / "resources/faq_data.csv"
+faqs_path = Path(__file__).parent / "resources/data/faq_data.csv"
 #ingest_faq_data(faqs_path)
 
 
@@ -84,9 +84,10 @@ def faq_chain(query):
 
 
 if __name__ == '__main__':
+    # print(faqs_path)
     ingest_faq_data(faqs_path)
     query = "what's your policy on defective products?"
-    #query = "Do you take cash as a payment option?"
-    # result = get_relevant_qa(query)
+    # #query = "Do you take cash as a payment option?"
+    # # result = get_relevant_qa(query)
     answer = faq_chain(query)
     print("Answer:",answer)

@@ -4,7 +4,7 @@ from sql import sql_chain
 from pathlib import Path
 from router import router
 
-faqs_path = Path(__file__).parent / "resources/faq_data.csv"
+faqs_path = Path(__file__).parent / "resources/data/faq_data.csv"
 ingest_faq_data(faqs_path)
 
 

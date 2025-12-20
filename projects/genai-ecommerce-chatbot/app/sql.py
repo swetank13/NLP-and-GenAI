@@ -123,8 +123,7 @@ if __name__ == "__main__":
     # question = "All shoes with rating higher than 4.5 and total number of reviews greater than 500"
     # sql_query = generate_sql_query(question)
     # print(sql_query)
-    question = "Show top 3 shoes in descending order of rating"
-    # question = "Show me 3 running shoes for woman"
+    question = "Show me 3 running shoes for woman"
     # question = "sfsdfsddsfsf"
     answer = sql_chain(question)
     print(answer)
