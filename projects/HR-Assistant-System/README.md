@@ -48,3 +48,6 @@ HR Assist Client Home Page
 - MCP Server has Tool, Prompt and Knowledge.
   - When we are defining sevices/action like send mail we use @mcp.tool()
   - When we are stiching together different services/activity then we use @mcp.prompt()
+
+- Employee onboarding has completed successfully
+![img.png](resources/HRMS_onboarding_comleted_ successfully.png)
