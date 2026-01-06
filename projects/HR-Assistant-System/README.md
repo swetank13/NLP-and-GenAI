@@ -1,7 +1,8 @@
-- Overview:
+- Overview: HR Management System
+  Our HRMS automates repetitive manual tasks for HR teams, such as scheduling welcome meetings creating employee profiles, submitting IT helpdesk requests, ordering laptops, and issuing ID cards—freeing up time for strategic work.
 
 - Prerequisite installation
-  - Claude Desktop
+  - Claude Desktop (For setting refer at the end)
   - Install uv: powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
   - HRMS folder for api integration
   - In cli of ide: uv add mcp[cli]
@@ -20,5 +21,30 @@
 HR Assist Client Home Page
 ![img.png](resources/HR-Assist-Client-Home-Page.png)
 
-HR Assist Response
+- HR Assist Response
 ![img.png](resources/HR-Assist-Response.png)
+
+- How to integrate Claude with code running:
+  - Enable developer mode in Claude Desktop
+  - Hamburger icon -> Developer -> Open app config -> Enter the details as below
+{
+    "mcpServers": {
+        "hr-assist": {
+            "command": "Path where uv.exe is available like \\.local\\bin\\uv",
+            "args": [
+                "--directory",
+                "Path of the project",
+                "run",
+                "server.py"
+            ],
+            "env": {
+                "EMAIL": "xyz@gmail.com",
+                "EMAIL_PWD": "abcdefghi"
+            }
+        }
+    }
+}
+
+- MCP Server has Tool, Prompt and Knowledge.
+  - When we are defining sevices/action like send mail we use @mcp.tool()
+  - When we are stiching together different services/activity then we use @mcp.prompt()
